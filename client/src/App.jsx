@@ -11,7 +11,7 @@ import InterviewHistory from './Pages/InterviewHistory'
 import Pricing from './Pages/Pricing'
 import InterviewReport from './Pages/InterviewReport'
 
-export const ServerUrl = "http://localhost:8000"
+export const ServerUrl = "https://prepbot-iidw.onrender.com"
 
 function App () {
 
