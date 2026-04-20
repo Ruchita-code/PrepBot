@@ -5,6 +5,7 @@ import { motion } from "motion/react"
 import axios from "axios"
 import { useDispatch } from 'react-redux'
 import { setUserData } from '../redux/userSlice' 
+import { ServerUrl } from '../App'
 
 function Pricing() {
   const navigate = useNavigate()
@@ -64,7 +65,7 @@ function Pricing() {
       plan.id === "pro"  ? 599 : 0;
 
       
-      const result = await axios.post(import.meta.env.VITE_SERVER_URL + "/api/payment/order", {
+      const result = await axios.post(ServerUrl + "/api/payment/order", {
         planId: plan.id,
         amount: amount,
         credits: plan.credits,
@@ -79,7 +80,7 @@ function Pricing() {
         order_id: result.data.id,
 
         handler: async function (response) {
-          const verifypay = await axios.post(import.meta.env.VITE_SERVER_URL + "/api/payment/verify",
+          const verifypay = await axios.post(ServerUrl + "/api/payment/verify",
             response , {withCredentials:true})
             dispatch(setUserData(verifypay.data.user))
 
