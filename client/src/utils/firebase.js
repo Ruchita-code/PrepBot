@@ -12,12 +12,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth"
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: "prepbot-4e9ad.firebaseapp.com",
-  projectId: "prepbot-4e9ad",
-  storageBucket: "prepbot-4e9ad.firebasestorage.app",
-  messagingSenderId: "321776809940",
-  appId: "1:321776809940:web:52d1286298766be5974841"
+  authDomain: "prepbot-cdb7f.firebaseapp.com",
+  projectId: "prepbot-cdb7f",
+  storageBucket: "prepbot-cdb7f.firebasestorage.app",
+  messagingSenderId: "603187933408",
+  appId: "1:603187933408:web:f65f319382a692bdf06085"
 };
+
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
