@@ -13,6 +13,7 @@ An AI-powered interview preparation platform that conducts real voice-based mock
 - 📄 **Resume-Based Questions** — Upload your resume and the AI generates personalized questions based on your experience
 - 🎯 **HR & Technical Round** — Choose between HR or Technical interview mode before starting
 - ⏱️ **Timed Questions** — Each question has a time limit to simulate real interview pressure
+- 📈 **Adaptive Difficulty** — Questions progressively increase in difficulty from Easy → Medium → Hard as you move forward
 - 📝 **Real-Time Feedback** — Get instant AI feedback after every answer
 - 📊 **Performance Analysis** — View detailed performance report with scores after interview completion
 - 📥 **Download as PDF** — Export your full interview report including scores and feedback as a PDF
